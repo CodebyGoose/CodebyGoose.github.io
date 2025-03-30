@@ -18,7 +18,7 @@ HTML
 
 CSS
 
-JavaScript (if applicable)
+JavaScript 
 
 How to View
 Visit the live site at: [Your Website URL]
