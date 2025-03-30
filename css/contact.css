@@ -1,0 +1,412 @@
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 120px auto 60px;
+    padding: 3rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #5d27f2;
+}
+
+textarea.form-input {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-info {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+.profile-section {
+    padding: 6rem 2rem 2rem;
+    margin-top: 60px;
+    background: white;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: 0 5px 15px var(--primary-shadow);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.profile-title {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-contact-info {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.email-icon {
+    background-image: url('../img/email.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 1rem;
+}
+
+.phone-icon {
+    background-image: url('../img/phone.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 1rem;
+}
+
+.location-icon {
+    background-image: url('../img/loc.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 1rem;
+}
+
+/* Existing contact form styles */
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.contact-section {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 900px;
+}
+
+.contact-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--primary-shadow);
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-card p,
+.contact-card a {
+    font-size: 0.9rem;
+    color: #666;
+    word-break: break-word;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--primary);
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 0.8rem;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-contact-info {
+        justify-content: center;
+    }
+}
+
+.contact-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 2rem;
+}
+
+.contact-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: 0 5px 15px var(--primary-shadow);
+}
+
+.profile-info h1 {
+    font-size: 3rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+    margin: 3rem auto;
+    max-width: 900px;
+}
+
+.contact-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--primary-shadow);
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 0.8rem;
+    background-size: contain;
+    background-position: center;
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-card p,
+.contact-card a {
+    font-size: 0.9rem;
+    color: #666;
+    word-break: break-word;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--primary);
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links h2 {
+    margin-bottom: 2rem;
+    color: var(--primary-dark);
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    background: var(--primary-light);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.github-icon {
+    background-image: url('../img/githublogo.jpg');
+}
+
+.linkedin-icon {
+    background-image: url('../img/linkedinlogo.jpg');
+}
+
+.facebook-icon {
+    background-image: url('../img/facebook.jpg');
+}
+
+.social-card span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .social-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .profile-info h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 1rem;
+    }
+
+    .social-card {
+        padding: 1rem;
+    }
+}
+
+

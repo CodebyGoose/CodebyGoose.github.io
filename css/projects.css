@@ -1,0 +1,310 @@
+/* Projects Grid */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    margin-top: 80px;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 0 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--primary-shadow);
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tech span {
+    background: var(--primary-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+}
+
+.project-links {
+    margin-top: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #5d27f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #4a1ec2;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .video-container,
+    .slideshow-container {
+        height: 300px;
+    }
+
+    .documentation-card {
+        padding: 1rem;
+    }
+
+    .documentation-card h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-tech {
+        flex-wrap: wrap;
+    }
+
+    .project-tech span {
+        font-size: 0.8rem;
+    }
+
+    .slide-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+.project-documentation {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 2rem;
+}
+
+.documentation-container {
+    margin-top: 2rem;
+}
+
+.documentation-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.documentation-card h3 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.documentation-content {
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.documentation-content h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-light);
+}
+
+.documentation-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.documentation-details ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.documentation-details li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    color: #444;
+}
+
+.documentation-details li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;  /* Reduced from 1000px */
+    height: 450px;     /* 16:9 aspect ratio for 800px width */
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Changed from default to maintain aspect ratio */
+    background: #000;     /* Dark background for letterboxing */
+    border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--primary-shadow);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-light);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--primary-dark);
+}
+
+.slide-btn:hover {
+    background: white;
+    color: var(--primary);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.documentation-content {
+    margin-top: 2rem;
+}
+
+.documentation-content h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.documentation-details {
+    margin-top: 2rem;
+}
+
+.documentation-details ul {
+    list-style: none;
+    padding-left: 1.2rem;
+}
+
+.documentation-details li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+.documentation-details li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+}
+
+

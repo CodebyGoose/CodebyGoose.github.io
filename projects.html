@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-brand">CodebyGoose</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="projects-container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/aditra.jpg" alt="ADITRA Project">
+                </div>
+                <div class="project-content">
+                    <h3>Automatic Disinfecting Trashbin (ADITRA)</h3>
+                    <p>An innovative automatic disinfecting trash bin utilizing embedded systems and sensors for improved hygiene and safety.</p>
+                    <div class="project-tech">
+                        <span>Arduino</span>
+                        <span>Electronics</span>
+                        <span>Sensors</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/aghamsi3.jpg" alt="E-Library Project">
+                </div>
+                <div class="project-content">
+                    <h3>E-Library AGHAMSI</h3>
+                    <p>A local network-based digital library system designed to enhance educational resource accessibility for Grade 12 students.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Node</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-documentation">
+        <h2 class="section-title">Project Overview</h2>
+        <div class="documentation-container">
+            <div class="documentation-card">
+                <h3>ADITRA</h3>
+                <div class="video-container">
+                    <video controls width="100%">
+                        <source src="vid/aditra_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="documentation-content">
+                    <h4>Project Description</h4>
+                    <p>The Automatic Disinfecting Trashbin (ADITRA) is an innovative solution that combines hardware and software to create a safer waste disposal system.</p>
+                    <div class="documentation-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Automatic lid operation using proximity sensors and servo motors</li>
+                            <li>UV Light disinfection system</li>
+                            <li>Precise control using Arduino servo mechanism</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="documentation-card">
+                <h3>AGHAMSI</h3>
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <img src="img/aghamsi1.jpg" alt="AGHAMSI Homepage">
+                        <img src="img/aghamsi2.jpg" alt="AGHAMSI Library">
+                        <img src="img/aghamsi3.jpg" alt="AGHAMSI Dashboard">
+                    </div>
+                    <button class="slide-btn prev">❮</button>
+                    <button class="slide-btn next">❯</button>
+                </div>
+                <div class="documentation-content">
+                    <h4>Project Description</h4>
+                    <p>E-Library AGHAMSI is a digital library system designed for Grade 12 students to access educational resources easily through the local network.</p>
+                    <div class="documentation-details">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li>Digital book catalog and search system</li>
+                            <li>User-friendly interface for easy navigation</li>
+                            <li>Local network accessibility for students</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Joshua J. Atienza. All rights reserved.</p>
+    </footer>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>

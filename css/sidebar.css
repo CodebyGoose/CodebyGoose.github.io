@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 15px 0;
+    display: block;
+    font-size: 14px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.nav-link.active {
+    opacity: 1;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
