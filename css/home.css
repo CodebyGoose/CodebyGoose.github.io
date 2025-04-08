@@ -1,8 +1,8 @@
 :root {
-    --primary: #ff69b4;
-    --primary-dark: #ff1493;
-    --primary-light: #ffb6c1;
-    --primary-shadow: rgba(255, 105, 180, 0.3);
+    --primary: #ff69b4; /* Represents the main color theme (hot pink) used for primary elements. */
+    --primary-dark: #ff1493; /* A darker shade of the primary color, useful for hover states or emphasis. */
+    --primary-light: #ffb6c1; /* A lighter shade of the primary color, suitable for backgrounds or highlights. */
+    --primary-shadow: rgba(255, 105, 180, 0.3); /* A semi-transparent version of the primary color, ideal for shadows or overlays. */
 }
 
 html, body {
