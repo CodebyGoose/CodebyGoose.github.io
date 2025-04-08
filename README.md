@@ -21,7 +21,7 @@ CSS
 JavaScript 
 
 How to View
-Visit the live site at: [Your Website URL]
+Visit the live site at: https://codebygoose.github.io
 
 Author
 Joshua .J Atienza
