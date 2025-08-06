@@ -25,7 +25,7 @@ Visit the live site at: https://codebygoose.github.io
 
 Author
 Joshua .J Atienza
-2nd-Year Computer Engineering Student
+3rd-Year Computer Engineering Student
 University of the Assumption
 
 License
