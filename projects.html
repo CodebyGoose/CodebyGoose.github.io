@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +12,10 @@
     <header>
         <nav class="navbar">
             <a href="index.html" class="navbar-brand">CodebyGoose</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -25,14 +25,13 @@
     <section class="projects-container">
         <h2 class="section-title">My Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+            <article class="project-card">
                 <div class="project-image">
-                    <img src="img/aditra.jpg" alt="ADITRA Project">
+                    <img src="img/aditra.jpg" alt="Automatic Disinfecting Trashbin (ADITRA)" loading="lazy" />
                 </div>
                 <div class="project-content">
                     <h3>Automatic Disinfecting Trashbin (ADITRA)</h3>
-                    <p>Led the development of an innovative automatic disinfecting trash bin as a capstone project. Utilized embedded systems, sensors, and microcontrollers to automate the disinfection process, promoting hygiene and safety.
-                     Gained experience in hardware integration, programming, and project management.</p>
+                    <p>Developed an automated disinfecting trash bin integrating sensors and microcontrollers for contactless operation and UV disinfection. Outcome: improved hygiene and safer disposal through automated cycles.</p>
                     <div class="project-tech">
                         <span>Arduino</span>
                         <span>Electronics</span>
@@ -40,31 +39,30 @@
                         <span>C++</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card">
+            <article class="project-card">
                 <div class="project-image">
-                    <img src="img/aghamsi3.jpg" alt="E-Library Project">
+                    <img src="img/aghamsi3.jpg" alt="E-Library AGHAMSI web application" loading="lazy" />
                 </div>
                 <div class="project-content">
                     <h3>E-Library AGHAMSI</h3>
-                    <p>Designed and developed a local network-based E-Library website using HTML as a capstone project for Grade 12 students. Enhanced educational resource accessibility and usability, demonstrating skills in web development and user interface design.Designed and developed a local network-based E-Library website using HTML as a capstone project for Grade 12 students. Enhanced educational resource accessibility and usability,
-                     demonstrating skills in web development and user interface design.</p>
+                    <p>Built a local network E‑Library to streamline resource access for Grade 12 students with a simple, usable interface. Outcome: faster resource discovery and improved accessibility within the school network.</p>
                     <div class="project-tech">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <span>Node</span>
+                        <span>JavaScript</span>
                         <span>MySQL</span>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
-    <section class="project-documentation">
+    <section class="project-documentation" aria-label="Project documentation and media">
         <h2 class="section-title">Project Overview</h2>
         <div class="documentation-container">
-            <div class="documentation-card">
+            <article class="documentation-card">
                 <h3>ADITRA</h3>
                 <div class="video-container">
                     <video controls width="100%">
@@ -84,22 +82,22 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="documentation-card">
+            <article class="documentation-card">
                 <h3>AGHAMSI</h3>
-                <div class="slideshow-container">
+                <div class="slideshow-container" aria-label="AGHAMSI screenshots slideshow">
                     <div class="slides">
-                        <img src="img/aghamsi1.jpg" alt="AGHAMSI Homepage">
-                        <img src="img/aghamsi2.jpg" alt="AGHAMSI Library">
-                        <img src="img/aghamsi3.jpg" alt="AGHAMSI Dashboard">
+                        <img src="img/aghamsi1.jpg" alt="AGHAMSI homepage" />
+                        <img src="img/aghamsi2.jpg" alt="AGHAMSI library view" />
+                        <img src="img/aghamsi3.jpg" alt="AGHAMSI dashboard" />
                     </div>
-                    <button class="slide-btn prev">❮</button>
-                    <button class="slide-btn next">❯</button>
+                    <button class="slide-btn prev" aria-label="Previous slide">❮</button>
+                    <button class="slide-btn next" aria-label="Next slide">❯</button>
                 </div>
                 <div class="documentation-content">
                     <h4>Project Description</h4>
-                    <p>E-Library AGHAMSI is a digital library system designed for Adelle Grace Students to access educational resources easily through the local network.</p>
+                    <p>E-Library AGHAMSI is a digital library system designed for Adelle Grace students to access educational resources easily through the local network.</p>
                     <div class="documentation-details">
                         <h4>Key Features</h4>
                         <ul>
@@ -109,7 +107,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -117,127 +115,6 @@
         <p>&copy; 2025 Joshua J. Atienza. All rights reserved.</p>
     </footer>
     <script src="js/slideshow.js"></script>
+    <script src="js/nav.js" defer></script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="navbar-brand">CodebyGoose</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="projects-container">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/aditra.jpg" alt="ADITRA Project">
-                </div>
-                <div class="project-content">
-                    <h3>Automatic Disinfecting Trashbin (ADITRA)</h3>
-                    <p>Led the development of an innovative automatic disinfecting trash bin as a capstone project. Utilized embedded systems, sensors, and microcontrollers to automate the disinfection process, promoting hygiene and safety.
-                     Gained experience in hardware integration, programming, and project management.</p>
-                    <div class="project-tech">
-                        <span>Arduino</span>
-                        <span>Electronics</span>
-                        <span>Sensors</span>
-                        <span>C++</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="img/aghamsi3.jpg" alt="E-Library Project">
-                </div>
-                <div class="project-content">
-                    <h3>E-Library AGHAMSI</h3>
-                    <p>Designed and developed a local network-based E-Library website using HTML as a capstone project for Grade 12 students. Enhanced educational resource accessibility and usability, demonstrating skills in web development and user interface design.Designed and developed a local network-based E-Library website using HTML as a capstone project for Grade 12 students. Enhanced educational resource accessibility and usability,
-                     demonstrating skills in web development and user interface design.</p>
-                    <div class="project-tech">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Node</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="project-documentation">
-        <h2 class="section-title">Project Overview</h2>
-        <div class="documentation-container">
-            <div class="documentation-card">
-                <h3>ADITRA</h3>
-                <div class="video-container">
-                    <video controls width="100%">
-                        <source src="vid/aditra_demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="documentation-content">
-                    <h4>Project Description</h4>
-                    <p>The Automatic Disinfecting Trashbin (ADITRA) is an innovative solution that combines hardware and software to create a safer waste disposal system.</p>
-                    <div class="documentation-details">
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>Automatic lid operation using proximity sensors and servo motors</li>
-                            <li>UV Light disinfection system</li>
-                            <li>Precise control using Arduino servo mechanism</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="documentation-card">
-                <h3>AGHAMSI</h3>
-                <div class="slideshow-container">
-                    <div class="slides">
-                        <img src="img/aghamsi1.jpg" alt="AGHAMSI Homepage">
-                        <img src="img/aghamsi2.jpg" alt="AGHAMSI Library">
-                        <img src="img/aghamsi3.jpg" alt="AGHAMSI Dashboard">
-                    </div>
-                    <button class="slide-btn prev">❮</button>
-                    <button class="slide-btn next">❯</button>
-                </div>
-                <div class="documentation-content">
-                    <h4>Project Description</h4>
-                    <p>E-Library AGHAMSI is a digital library system designed for Adelle Grace Students to access educational resources easily through the local network.</p>
-                    <div class="documentation-details">
-                        <h4>Key Features</h4>
-                        <ul>
-                            <li>Digital book catalog and search system</li>
-                            <li>User-friendly interface for easy navigation</li>
-                            <li>Local network accessibility for students</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Joshua J. Atienza. All rights reserved.</p>
-    </footer>
-    <script src="js/slideshow.js"></script>
-</body>
-</html>
->>>>>>> 24f671c (Refactor website structure and content: updated navigation links, enhanced about and project sections, and improved CSS styles for better organization and readability.)

@@ -1,8 +1,8 @@
 :root {
-    --primary: #ff69b4; /* Represents the main color theme (hot pink) used for primary elements. */
-    --primary-dark: #ff1493; /* A darker shade of the primary color, useful for hover states or emphasis. */
-    --primary-light: #ffb6c1; /* A lighter shade of the primary color, suitable for backgrounds or highlights. */
-    --primary-shadow: rgba(255, 105, 180, 0.3); /* A semi-transparent version of the primary color, ideal for shadows or overlays. */
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #e0e7ff;
+    --primary-shadow: rgba(37, 99, 235, 0.2);
 }
 
 html, body {
@@ -12,13 +12,9 @@ html, body {
 
 html {
     scroll-behavior: smooth;
-    overscroll-behavior: none;
-    overflow: hidden;
 }
 
 body {
-    overflow: hidden;
-    height: 100vh;
 }
 
 /* Hero Section */

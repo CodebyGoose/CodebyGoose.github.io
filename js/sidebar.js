@@ -1,51 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section[class*="-section"]');
-    let isScrolling = false;
-    let currentSectionIndex = 0;
 
-    function scrollToSection(index) {
-        if (index >= 0 && index < sections.length) {
-            isScrolling = true;
-            currentSectionIndex = index;
-            
-            // Remove active class from all sections
-            sections.forEach(section => section.classList.remove('active'));
-            
-            // Add active class to target section
-            sections[index].classList.add('active');
-            sections[index].scrollIntoView({ behavior: 'smooth' });
-            
-            navLinks.forEach(link => link.classList.remove('active'));
-            navLinks[index].classList.add('active');
-
-            setTimeout(() => isScrolling = false, 800);
-        }
-    }
-
-    // Handle mouse wheel
-    window.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        if (!isScrolling) {
-            if (e.deltaY > 0) {
-                scrollToSection(currentSectionIndex + 1);
-            } else {
-                scrollToSection(currentSectionIndex - 1);
-            }
-        }
-    }, { passive: false });
-
-    // Handle click navigation
-    navLinks.forEach((link, index) => {
+    // Smooth scroll on click
+    navLinks.forEach((link) => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            scrollToSection(index);
+            const id = link.getAttribute('data-section');
+            const target = document.querySelector(`.${id}`);
+            target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
 
-    // Initial active section
-    scrollToSection(0);
+    // Observe sections to set active state
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const id = Array.from(entry.target.classList).find(c => c.endsWith('-section'));
+            const link = document.querySelector(`.nav-link[data-section="${id}"]`);
+            if (entry.isIntersecting) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link?.classList.add('active');
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.5 });
 
-    // Make first section active on load
-    sections[0].classList.add('active');
+    sections.forEach((section) => observer.observe(section));
+
+    // Mobile nav toggle (shared across pages)
+    const toggle = document.querySelector('.nav-toggle');
+    const navList = document.querySelector('.navbar ul');
+    toggle?.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        navList?.classList.toggle('show');
+    });
 });

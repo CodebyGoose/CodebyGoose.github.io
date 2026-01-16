@@ -1,8 +1,8 @@
 :root {
-    --primary: #ff69b4;
-    --primary-dark: #ff1493;
-    --primary-light: #ffb6c1;
-    --primary-shadow: rgba(255, 105, 180, 0.3);
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #e0e7ff;
+    --primary-shadow: rgba(37, 99, 235, 0.2);
 }
 
 * {
@@ -14,7 +14,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
+    background: #f8fafc;
     color: #333;
 }
 
@@ -95,8 +95,53 @@ a:hover {
     color: var(--primary-dark);
 }
 
-.card, .box, .container {
-    box-shadow: 0 5px 15px var(--primary-shadow);
+/* Core layout utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--primary-shadow);
+    padding: 1.5rem;
+}
+
+.box { box-shadow: 0 5px 15px var(--primary-shadow); }
+
+/* Mobile navigation */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+    .nav-toggle { display: block; }
+    .navbar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 0.5rem 1rem 1rem;
+        display: none;
+    }
+    .navbar ul.show { display: flex; }
+    .navbar ul li { padding: 0.5rem 0; }
+    .navbar ul li a { font-size: 1rem; }
 }
 
 @media (max-width: 768px) {

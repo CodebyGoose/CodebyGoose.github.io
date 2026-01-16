@@ -1,32 +1,88 @@
-# Personal Website Portfolio
+# CodebyGoose — Personal Portfolio
 
-This is my personal website portfolio, showcasing my skills, projects, and achievements as a Computer Engineering student. It serves as a professional platform to display my coding projects, technical expertise, and academic accomplishments.
+A clean, professional portfolio to showcase skills, projects, and background as a Computer Engineering student and web developer.
 
-Features
-Modern and professional design
+Live Site: https://codebygoose.github.io
 
-Project showcases with detailed descriptions and screenshots
+## Overview
+This site presents a concise profile, project highlights (including ADITRA and E‑Library AGHAMSI), education, skills, and contact information. The design follows a modern aesthetic with an accessible color palette and responsive layout.
 
-Responsive and accessible layout
+## Features
+- Consistent, professional visual design using a blue palette
+- Project pages with media (video and slideshow) and tech stack badges
+- Responsive layout across desktop and mobile
+- Accessible markup (alt text, aria labels, semantic sections)
+- Simple, static deployment with GitHub Pages
 
-Contact form for inquiries and connections
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (vanilla)
 
-Integrated resume and skill highlights
+## Project Structure
+```
+CodebyGoose.github.io/
+├── index.html           # Home page
+├── projects.html        # Projects + documentation
+├── about.html           # About
+├── contact.html         # Contact & social links
+├── css/
+│   ├── styles.css       # Global styles (palette, navbar, base)
+│   ├── home.css         # Home-specific sections
+│   ├── projects.css     # Projects layout & documentation styles
+│   ├── about.css        # About page layout
+│   └── contact.css      # Contact & social cards
+├── js/
+│   ├── sidebar.js       # Section nav activation & smooth scroll
+│   └── slideshow.js     # Simple image carousel for project screenshots
+├── img/                 # Images and logos
+├── vid/                 # Project video(s)
+└── README.md
+```
 
-Technologies Used
-HTML
+## Color System
+Defined in CSS variables (css/styles.css and referenced across page-specific CSS):
+- --primary: #2563eb
+- --primary-dark: #1e40af
+- --primary-light: #e0e7ff
+- --primary-shadow: rgba(37, 99, 235, 0.2)
 
-CSS
+These provide consistent theming for buttons, titles, badges, and shadows.
 
-JavaScript 
+## Pages
+- Home (index.html): Hero, profiles, education, skills, experience
+- Projects (projects.html): Project cards and documentation with video/slideshow
+- About (about.html): Background, specialties, tools, and focus areas
+- Contact (contact.html): Email, phone, location, and social profiles
 
-How to View
-Visit the live site at: https://codebygoose.github.io
+## Scripts
+- sidebar.js: Smooth section navigation and active state handling
+- slideshow.js: Lightweight carousel for AGHAMSI screenshots
 
-Author
-Joshua .J Atienza
-3rd-Year Computer Engineering Student
-University of the Assumption
+## Local Development
+No build step is required.
+- Option 1: Double-click index.html to open in your browser
+- Option 2 (recommended): Use a local web server to avoid any asset path issues
+  - VS Code Live Server extension, or
+  - Python: `python -m http.server` (then open http://localhost:8000)
 
-License
-This project is open-source and available under the MIT License.
+## Deployment (GitHub Pages)
+This repository is configured for GitHub Pages as a static site:
+1. Push changes to the default branch (main/master)
+2. In GitHub: Settings → Pages → Source: Deploy from a branch
+3. Set the branch (e.g., main) and folder `/` (root)
+4. The site will be available at https://<username>.github.io
+
+## Accessibility
+- Images include descriptive alt attributes
+- Interactive elements include aria-labels where appropriate
+- Color contrast targets WCAG AA using the blue palette
+
+## Author
+Joshua J. Atienza
+- 3rd-Year Computer Engineering Student
+- University of the Assumption
+- GitHub: https://github.com/CodebyGoose
+
+## License
+This project is available under the MIT License.

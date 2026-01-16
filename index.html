@@ -1,17 +1,22 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <script src="js/sidebar.js" defer></script>
+    <script src="js/nav.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="navbar-brand">CodebyGoose</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -29,7 +34,7 @@
 
     <section class="hero hero-section">
         <div class="profile-container">
-            <img src="img/profile.jpg" alt="Joshua J. Atienza" class="profile-img">
+            <img src="img/profile.jpg" alt="Joshua J. Atienza" class="profile-img" loading="lazy">
         </div>
         <h2>Hello, I'm Joshua</h2>
         <p>A passionate web developer creating beautiful, functional websites</p>
@@ -135,5 +140,8 @@
             </div>
         </div>
     </section>
+<footer>
+        <p>&copy; 2025 Joshua J. Atienza. All rights reserved.</p>
+    </footer>
 </body>
 </html>
